@@ -1,0 +1,12 @@
+.heading {
+    margin-bottom: 1em;
+}
+#errors .alert {
+    display: none;
+}
+#sheme {
+    margin-top: 2em;
+}
+.table-panel {
+    display: inline-block;
+}

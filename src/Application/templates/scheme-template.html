@@ -1,0 +1,18 @@
+<%
+_.each(sheme,function(table, tableName){
+%>
+<div class="panel panel-default table-panel">
+    <div class="panel-heading"><%=tableName%></div>
+    <table class="table">
+        <tbody>
+        <%
+        _.each(table[0],function(tableCell, cellName){
+        %>
+        <tr>
+            <td><%=cellName%></td>
+        </tr>
+        <%});%>
+        </tbody>
+    </table>
+</div>
+<%});%>

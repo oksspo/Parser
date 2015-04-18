@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <%
+                _.each(result[0],function(cell, heading){
+            %>
+                <th><%=heading%></th>
+            <%});%>
+        </tr>
+        </thead>
+
+        <tbody>
+        <%
+            _.each(result,function(item){
+        %>
+        <tr>
+            <%
+            _.each(item,function(i){
+            %>
+            <td><%=i%></td>
+            <%});%>
+        </tr>
+        <%});%>
+        </tbody>
+    </table>
+</div>
